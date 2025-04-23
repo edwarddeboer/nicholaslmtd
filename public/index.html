@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nicholas Barrett | Investment Advisor</title>
   <style>
+    :root {
+      --primary: #00bcd4;
+      --accent: #4fc3f7;
+      --bg: #121212;
+      --banner: #1e1e1e;
+      --text: #e0e0e0;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
     }
 
     header, section {
@@ -36,25 +44,25 @@
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
       margin-bottom: 0.5rem;
     }
 
     h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: #00bcd4;
+      color: var(--primary);
     }
 
     h3 {
       font-size: 1.1rem;
       margin-top: 1.5rem;
-      color: #90caf9;
+      color: var(--accent);
     }
 
     p {
       max-width: 800px;
-      margin: auto;
+      margin: auto auto 1.2rem auto;
     }
 
     ul {
@@ -66,7 +74,7 @@
     }
 
     blockquote {
-      border-left: 4px solid #00bcd4;
+      border-left: 4px solid var(--primary);
       padding-left: 1rem;
       font-style: italic;
       color: #ccc;
@@ -74,14 +82,14 @@
     }
 
     .banner {
-      background-color: #1e1e1e;
+      background-color: var(--banner);
       border-radius: 8px;
       padding: 2rem;
       margin-top: 2rem;
     }
 
     a {
-      color: #4fc3f7;
+      color: var(--accent);
       text-decoration: none;
       font-weight: bold;
     }
@@ -93,10 +101,37 @@
     .contact-info p {
       margin: 0.5rem 0;
     }
+
+    footer {
+      padding: 2rem;
+      background: #1b1b1b;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      header, section {
+        padding: 2.5rem 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .avatar {
+        width: 100px;
+        height: 100px;
+      }
+    }
   </style>
 </head>
 <body>
-  <header class="text-center" style="background-color: #212121; padding-top: 3rem; padding-bottom: 3rem;">
+  <header class="text-center" style="background-color: #212121;">
     <img 
       src="https://img.freepik.com/premium-photo/happy-mid-aged-older-business-man-executive-standing-office-smiling-50-year-old-mature-confident-professional-manager-confident-businessman-investor-looking-camera-headshot-close-up-portrait_1239717-13648.jpg" 
       alt="Nicholas Barrett" 
@@ -121,17 +156,17 @@
     <section>
       <h2>About Nicholas</h2>
       <p>
-         With over 15 years of experience in financial services, including 7 years focused on cryptocurrency and alternative assets, Nicholas works with clients of all experience levels. He values education, transparency, and long-term strategy tailored to each investor’s goals.
-    </p>
-    <p class="text-lg mb-4">
-      Nicholas’s expertise spans traditional investment strategies as well as the rapidly evolving world of digital assets. His diverse background allows him to offer holistic financial advice, integrating the latest trends with proven investment principles.
-    </p>
-    <p class="text-lg mb-4">
-      Outside of work, Nicholas is an avid learner and technology enthusiast. He believes in building strong client relationships and empowering individuals through financial literacy and innovative tools. His passion for education extends beyond the office as he regularly hosts workshops and webinars to help individuals better understand cryptocurrency and digital investing.
-    </p>
-    <p class="text-lg">
-      In his free time, Nicholas enjoys traveling, staying active, and reading about the intersection of technology, finance, and the future of digital assets. He is committed to continuous self-improvement and is always looking for new ways to expand his knowledge to better serve his clients.
-    </p>
+        With over 15 years of experience in financial services, including 7 years focused on cryptocurrency and alternative assets, Nicholas works with clients of all experience levels. He values education, transparency, and long-term strategy tailored to each investor’s goals.
+      </p>
+      <p>
+        Nicholas’s expertise spans traditional investment strategies as well as the rapidly evolving world of digital assets. His diverse background allows him to offer holistic financial advice, integrating the latest trends with proven investment principles.
+      </p>
+      <p>
+        Outside of work, Nicholas is an avid learner and technology enthusiast. He believes in building strong client relationships and empowering individuals through financial literacy and innovative tools. His passion for education extends beyond the office as he regularly hosts workshops and webinars.
+      </p>
+      <p>
+        In his free time, Nicholas enjoys traveling, staying active, and reading about the intersection of technology, finance, and the future of digital assets.
+      </p>
     </section>
 
     <section class="banner">
@@ -142,42 +177,43 @@
       <blockquote>
         “Professional, responsive, and trustworthy. Nicholas knows his stuff.” – David R.
       </blockquote>
-      <blockquote class="border-l-4 pl-4 italic text-gray-600 mb-6">
-      “I was hesitant about diving into the crypto world, but Nicholas made it so easy. His knowledge and patience really stand out. I’m grateful for his expertise.” – Karen M.
-    </blockquote>
-    <blockquote class="border-l-4 pl-4 italic text-gray-600">
-      “The education I’ve received from Nicholas has empowered me to make informed decisions about my investments. His professionalism and commitment to my success are unmatched.” – Brian L.
-    </blockquote>
+      <blockquote>
+        “I was hesitant about diving into the crypto world, but Nicholas made it so easy. His knowledge and patience really stand out. I’m grateful for his expertise.” – Karen M.
+      </blockquote>
+      <blockquote>
+        “The education I’ve received from Nicholas has empowered me to make informed decisions. His professionalism and commitment to my success are unmatched.” – Brian L.
+      </blockquote>
     </section>
 
     <section>
       <h2>FAQ</h2>
-      <div>
-        <h3>Do I need to know anything about crypto before working with you?</h3>
-        <p>Nope! I work with total beginners and seasoned investors alike.</p>
-      </div>
-      <div>
-        <h3>Is my money safe?</h3>
-        <p>I provide education and strategies that prioritize your financial safety and long-term success. I don’t directly hold client assets.</p>
-      </div>
-      <div>
-      <h3 class="font-semibold">How much experience do I need to start investing in cryptocurrency?</h3>
-        <p>No experience is necessary! I work with clients at all levels, from those who are new to crypto to those with more advanced knowledge. My goal is to guide you through the process at your own pace.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold">Can you help me with traditional investment strategies as well?</h3>
-        <p>Yes! While my focus is on cryptocurrency and digital assets, I also provide guidance on traditional investment strategies, such as stocks, bonds, and mutual funds, to ensure your portfolio is well-rounded and aligned with your long-term goals.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold">How often will we communicate about my investments?</h3>
-        <p>Communication frequency depends on your preferences and needs. I offer regular updates, quarterly reviews, and can schedule one-on-one meetings as often as needed to ensure you're comfortable and informed about your investment strategy.</p>
-      </div>
-    </div>
+      <h3>Do I need to know anything about crypto before working with you?</h3>
+      <p>Nope! I work with total beginners and seasoned investors alike.</p>
+
+      <h3>Is my money safe?</h3>
+      <p>I provide education and strategies that prioritize your financial safety and long-term success. I don’t directly hold client assets.</p>
+
+      <h3>How much experience do I need to start investing in cryptocurrency?</h3>
+      <p>No experience is necessary! I guide you through the process at your pace.</p>
+
+      <h3>Can you help with traditional investment strategies too?</h3>
+      <p>Yes. I also advise on stocks, bonds, and mutual funds for a balanced portfolio.</p>
+
+      <h3>How often will we communicate about my investments?</h3>
+      <p>As often as you prefer—quarterly reviews, regular updates, and on-demand sessions.</p>
     </section>
-        <p>Address: 4225 North Central Avenue, Suite 500, Phoenix, AZ 85012</p>
-        <p>Phone: (701) 518-4342</p
-        <p class="mt-4">Please reach out to schedule a consultation or to request more information, including registration documentation.</p>
-      </div>
+
+    <section class="banner contact-info">
+      <h2>Contact Information</h2>
+      <p>Address: 4225 North Central Avenue, Suite 500, Phoenix, AZ 85012</p>
+      <p>Phone: (701) 518-4342</p>
+      <p>Website: www.NicholasAdvisoryGroup.com</p>
+      <p>Please reach out to schedule a consultation or request more information, including registration documentation.</p>
     </section>
   </main>
+
+  <footer>
+    &copy; 2025 Nicholas Barrett. All rights reserved.
+  </footer>
 </body>
+</html>
