@@ -1,4 +1,170 @@
-import { useState } from "react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nicholas Barrett | Investment Advisor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header, section {
+      padding: 4rem 2rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00bcd4;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      color: #90caf9;
+    }
+
+    p {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    blockquote {
+      border-left: 4px solid #00bcd4;
+      padding-left: 1rem;
+      font-style: italic;
+      color: #ccc;
+      margin-bottom: 1.5rem;
+    }
+
+    .banner {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: #4fc3f7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="text-center" style="background-color: #212121; padding-top: 3rem; padding-bottom: 3rem;">
+    <img 
+      src="https://img.freepik.com/premium-photo/happy-mid-aged-older-business-man-executive-standing-office-smiling-50-year-old-mature-confident-professional-manager-confident-businessman-investor-looking-camera-headshot-close-up-portrait_1239717-13648.jpg" 
+      alt="Nicholas Barrett" 
+      class="avatar"
+    />
+    <h1>Nicholas Barrett</h1>
+    <p>Registered Investment Advisor | Cryptocurrency & Digital Asset Specialist</p>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h2>Services Offered</h2>
+      <ul>
+        <li>Personalized investment consulting</li>
+        <li>Cryptocurrency and digital asset guidance</li>
+        <li>Portfolio construction and performance monitoring</li>
+        <li>Risk management and investor education</li>
+        <li>Collaboration with CPAs and estate attorneys</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>About Nicholas</h2>
+      <p>
+        With over 15 years of experience in financial services, including 7 years focused on cryptocurrency and alternative assets, Nicholas works with clients of all experience levels. He values education, transparency, and long-term strategy tailored to each investor’s goals.
+      </p>
+    </section>
+
+    <section class="banner">
+      <h2>Testimonials</h2>
+      <blockquote>
+        “Nicholas helped me feel confident investing in crypto for the first time. He explains things so clearly and never pushes.” – Maria P.
+      </blockquote>
+      <blockquote>
+        “Professional, responsive, and trustworthy. Nicholas knows his stuff.” – David R.
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>FAQ</h2>
+      <div>
+        <h3>Do I need to know anything about crypto before working with you?</h3>
+        <p>Nope! I work with total beginners and seasoned investors alike.</p>
+      </div>
+      <div>
+        <h3>Is my money safe?</h3>
+        <p>I provide education and strategies that prioritize your financial safety and long-term success. I don’t directly hold client assets.</p>
+      </div>
+    </section>
+
+    <section class="banner">
+      <h2>Book a Consultation</h2>
+      <p>Schedule a time that works for you via my calendar:</p>
+      <p><a href="https://calendly.com/your-link" target="_blank">Book through Calendly</a></p>
+    </section>
+
+    <section>
+      <h2>Contact Information</h2>
+      <div class="contact-info">
+        <p>Address: 4225 North Central Avenue, Suite 500, Phoenix, AZ 85012</p>
+        <p>Phone: (701) 518-4342</p>
+        <p>Website: www.NicholasAdvisoryGroup.com</p>
+        <p class="mt-4">Please reach out to schedule a consultation or to request more information, including registration documentation.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>import { useState } from "react";
 
 export default function Home() {
   const [formStatus, setFormStatus] = useState("");
