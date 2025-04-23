@@ -9,22 +9,38 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-white text-gray-800 p-6">
-      <section className="text-center py-12">
-        <img 
-          src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=faces&fit=crop&w=320&h=320" 
-          alt="Nicholas Barrett" 
-          className="mx-auto rounded-full w-32 h-32 object-cover mb-4 shadow-lg"
-        />
-        <h1 className="text-4xl font-bold mb-4">Nicholas Barrett</h1>
-        <p className="text-lg max-w-2xl mx-auto">
-          Registered Investment Advisor | Specializing in Cryptocurrency and Digital Asset Guidance
+    <main className="min-h-screen bg-gray-50 text-gray-800 font-sans">
+      <header className="bg-white shadow py-6 px-4 md:px-8">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+          <div className="flex items-center space-x-4">
+            <img 
+              src="https://images.unsplash.com/photo-1502767089025-5b90d9c9a0b0" 
+              alt="Nicholas Barrett" 
+              className="rounded-full w-16 h-16 object-cover shadow"
+            />
+            <div>
+              <h1 className="text-2xl font-bold">Nicholas Barrett</h1>
+              <p className="text-sm text-gray-500">Registered Investment Advisor</p>
+            </div>
+          </div>
+          <nav className="mt-4 md:mt-0 space-x-4">
+            <a href="#services" className="text-blue-700 hover:underline">Services</a>
+            <a href="#about" className="text-blue-700 hover:underline">About</a>
+            <a href="#contact" className="text-blue-700 hover:underline">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section className="text-center py-12 bg-blue-50">
+        <h2 className="text-4xl font-bold mb-4">Empowering Investors Through Education</h2>
+        <p className="text-lg max-w-2xl mx-auto text-gray-700">
+          Specializing in Cryptocurrency and Digital Asset Guidance
         </p>
       </section>
 
-      <section className="py-10 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Services Offered</h2>
-        <ul className="list-disc list-inside space-y-2">
+      <section id="services" className="py-10 max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-semibold mb-6 text-center">Services Offered</h2>
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 list-disc list-inside">
           <li>Personalized investment consulting</li>
           <li>Cryptocurrency and digital asset guidance</li>
           <li>Portfolio construction and performance monitoring</li>
@@ -33,17 +49,17 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="py-10 bg-gray-100">
+      <section id="about" className="py-10 bg-gray-100 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-semibold mb-4">About Nicholas</h2>
+          <h2 className="text-3xl font-semibold mb-4">About Nicholas</h2>
           <p>
             With over 15 years of experience in financial services, including 7 years focused on cryptocurrency and alternative assets, Nicholas works with clients of all experience levels. He values education, transparency, and long-term strategy tailored to each investor’s goals.
           </p>
         </div>
       </section>
 
-      <section className="py-10 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Testimonials</h2>
+      <section className="py-10 max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl font-semibold mb-4">Testimonials</h2>
         <blockquote className="border-l-4 pl-4 italic text-gray-600 mb-6">
           “Nicholas helped me feel confident investing in crypto for the first time. He explains things so clearly and never pushes.” – Maria P.
         </blockquote>
@@ -52,8 +68,8 @@ export default function Home() {
         </blockquote>
       </section>
 
-      <section className="py-10 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">FAQ</h2>
+      <section className="py-10 max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl font-semibold mb-4">FAQ</h2>
         <div className="space-y-4">
           <div>
             <h3 className="font-semibold">Do I need to know anything about crypto before working with you?</h3>
@@ -66,8 +82,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-10 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Book a Consultation</h2>
+      <section className="py-10 max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl font-semibold mb-4">Book a Consultation</h2>
         <p className="mb-4">Schedule a time that works for you via my calendar:</p>
         <a
           href="https://calendly.com/your-link" 
@@ -76,8 +92,8 @@ export default function Home() {
         >Book through Calendly</a>
       </section>
 
-      <section className="py-10 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
+      <section id="contact" className="py-10 max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <input 
             type="text" 
@@ -104,13 +120,11 @@ export default function Home() {
         {formStatus && <p className="mt-4 text-green-600">{formStatus}</p>}
       </section>
 
-      <section className="py-10 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
-        <p>Address: 4225 North Central Avenue, Suite 500, Phoenix, AZ 85012</p>
-        <p>Phone: (701) 518-4342</p>
+      <footer className="py-8 text-center text-sm text-gray-500 bg-white border-t mt-8">
+        <p>4225 North Central Avenue, Suite 500, Phoenix, AZ 85012 | (701) 518-4342</p>
         <p>Website: www.NicholasAdvisoryGroup.com</p>
-        <p className="mt-4">Please reach out to schedule a consultation or to request more information, including registration documentation.</p>
-      </section>
+        <p className="mt-2">© {new Date().getFullYear()} Nicholas Advisory Group. All rights reserved.</p>
+      </footer>
     </main>
   );
 }
