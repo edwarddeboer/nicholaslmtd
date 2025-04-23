@@ -161,16 +161,6 @@
         <p>I provide education and strategies that prioritize your financial safety and long-term success. I don’t directly hold client assets.</p>
       </div>
     </section>
-
-    <section class="banner">
-      <h2>Book a Consultation</h2>
-      <p>Schedule a time that works for you via my calendar:</p>
-      <p><a href="https://calendly.com/your-link" target="_blank">Book through Calendly</a></p>
-    </section>
-
-    <section>
-      <h2>Contact Information</h2>
-      <div class="contact-info">
         <p>Address: 4225 North Central Avenue, Suite 500, Phoenix, AZ 85012</p>
         <p>Phone: (701) 518-4342</p
         <p class="mt-4">Please reach out to schedule a consultation or to request more information, including registration documentation.</p>
@@ -179,16 +169,6 @@
   </main>
 </body>
 </html>import { useState } from "react";
-
-export default function Home() {
-  const [formStatus, setFormStatus] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormStatus("Thank you for reaching out! I'll be in touch soon.");
-  };
-
-  return (
     <main className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <header className="bg-white shadow py-6 px-4 md:px-8">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
@@ -247,7 +227,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section id="about" className="py-14 bg-gray-100 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-6">About Nicholas</h2>
@@ -274,7 +253,6 @@ export default function Home() {
           </blockquote>
         </div>
       </section>
-
       <section className="py-14 bg-gray-100 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-semibold mb-6 text-center">FAQ</h2>
@@ -290,7 +268,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="py-14 bg-white px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-4">Book a Consultation</h2>
